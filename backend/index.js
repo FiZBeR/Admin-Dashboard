@@ -42,6 +42,8 @@ app.use("/sales", salesRoutes);
 /* MONGOOSE */
 const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
+    /*OverallStat.insertMany(dataOverallStat);*/
+    /*ProductStat.insertMany(dataProductStat);*/
     console.log("Servidor corriendo en el puerto: " + PORT);
 });
 

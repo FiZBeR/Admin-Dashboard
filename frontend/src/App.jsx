@@ -11,6 +11,7 @@ import Customers from "./scenes/customers/Customers";
 import Transactions from "./scenes/transactions/Transactions";
 import Geography from "./scenes/geography/Geography";
 import OverView from "./scenes/overview/OverView";
+import Daily from "./scenes/daily/Daily";
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
               <Route path="/customers" element={<Customers/>} />
               <Route path="/transactions" element={<Transactions/>} />
               <Route path="/geography" element={<Geography />} />
-              <Route path="/sales" element={<OverView />} />
+              <Route path="/overview" element={<OverView />} />
+              <Route path="/daily" element={<Daily/>} />
             </Route>
           </Routes>
         </ThemeProvider>

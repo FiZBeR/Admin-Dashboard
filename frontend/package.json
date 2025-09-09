@@ -18,9 +18,11 @@
     "@nivo/bar": "^0.99.0",
     "@nivo/core": "^0.99.0",
     "@nivo/geo": "^0.99.0",
+    "@nivo/line": "^0.99.0",
     "@nivo/pie": "^0.99.0",
     "@reduxjs/toolkit": "^2.8.2",
     "react": "^19.1.0",
+    "react-datepicker": "^8.7.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.30.1"
