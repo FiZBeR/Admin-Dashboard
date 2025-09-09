@@ -20,8 +20,9 @@ export const getProducts = async (req, res) => {
             })
         )
 
+        const stat = await ProductStat.find();
         console.log("Datos: ", productsWithStats);
-        return res.status(200).json(productsWithStats);
+        return res.status(200).json({productsWithStats, stat});
     } catch (error) {
         return res.status(404).json({ message: error.message});
     }
