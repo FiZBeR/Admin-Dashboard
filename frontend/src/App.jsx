@@ -14,6 +14,8 @@ import OverView from "./scenes/overview/OverView";
 import Daily from "./scenes/daily/Daily";
 import Monthly from "./scenes/monthy/Monthly";
 import Breakdown from "./scenes/breakdown/breakdown";
+import Admins from "./scenes/admins/Admins";
+import Performance from "./scenes/performance/Performance";
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
               <Route path="/daily" element={<Daily/>} />
               <Route path="/monthly" element={<Monthly />} />
               <Route path="/breakdown" element={<Breakdown/>} />
+              <Route path="/admin" element={<Admins/> }/>
+              <Route path="/performance" element={<Performance/>}/>
             </Route>
           </Routes>
         </ThemeProvider>

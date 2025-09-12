@@ -5,6 +5,7 @@ import { Box, Typography, useTheme } from '@mui/material';
 const BreakdownChart = ({ isDashboard = false }) => {
 
     const { data, isLoading } = useGetSalesQuery();
+    console.log(data);
     const theme = useTheme();
 
     if (!data || isLoading) return "Loading...";
@@ -15,6 +16,7 @@ const BreakdownChart = ({ isDashboard = false }) => {
       theme.palette.secondary[300],
       theme.palette.secondary[500],
     ];
+    
     const formattedData = Object.entries(data.salesByCategory).map(
       ([category, sales], i) => ({
         id: category,
@@ -25,7 +27,7 @@ const BreakdownChart = ({ isDashboard = false }) => {
     );
 
     return (
-        <Box>
+        <Box height="75vh">
             <ResponsivePie
                 data={formattedData}
                 theme={{
@@ -112,7 +114,7 @@ const BreakdownChart = ({ isDashboard = false }) => {
             />
             <Box>
                 <Typography variant="h6">
-                    {!isLoading && "Total: "}${data.yeralySalesTotal}
+                    {!isLoading && "Total: " + data.yearlySalesTotal}
                 </Typography>
             </Box>
         </Box>
