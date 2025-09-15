@@ -17,7 +17,6 @@ import Breakdown from "./scenes/breakdown/breakdown";
 import Admins from "./scenes/admins/Admins";
 import Performance from "./scenes/performance/Performance";
 
-
 function App() {
 
   const mode = useSelector((state) => state.global.mode);
@@ -42,6 +41,7 @@ function App() {
               <Route path="/breakdown" element={<Breakdown/>} />
               <Route path="/admin" element={<Admins/> }/>
               <Route path="/performance" element={<Performance/>}/>
+              <Route path="/dashboard" element={<Dashboard/>}/>
             </Route>
           </Routes>
         </ThemeProvider>

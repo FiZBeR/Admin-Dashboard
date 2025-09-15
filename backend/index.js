@@ -15,8 +15,9 @@ import User from "./models/user.model.js";
 import Product from "./models/product.model.js";
 import ProductStat from "./models/productStat.model.js";
 import Transaction from "./models/transaction.model.js";
-import OverallStat from "./models/overallStat.model.js"
-import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat } from "./data/index.js"
+import OverallStat from "./models/overallStat.model.js";
+import AffiliateStat from "./models/affiliateStat.model.js";
+import { dataUser, dataProduct, dataProductStat, dataTransaction, dataOverallStat, dataAffiliateStat } from "./data/index.js"
 
 /* CONEXCION CON LA BASE DE DATOS */
 import conection from "./data/conection.js"
@@ -44,6 +45,7 @@ const PORT = process.env.PORT || 9000;
 app.listen(PORT, () => {
     /*OverallStat.insertMany(dataOverallStat);*/
     /*ProductStat.insertMany(dataProductStat);*/
+    /*AffiliateStat.insertMany(dataAffiliateStat);*/
     console.log("Servidor corriendo en el puerto: " + PORT);
 });
 
